@@ -1,272 +1,205 @@
-![image](assets/img/header.png)
+## A bloated and modern-looking startpage
 
-<br />
+[![maintained](https://img.shields.io/maintenance/yes/2020?label=maintained&style=flat-square)](https://github.com/manilarome/the-glorious-startpage/commits/master) [![contributions](https://img.shields.io/badge/contribution-welcome-brightgreen&?style=flat-square)](https://github.com/manilarome/the-glorious-startpage/pulls) [![HitCount](http://hits.dwyl.com/manilarome/the-glorious-startpage.svg)](http://hits.dwyl.com/manilarome/the-glorious-startpage) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/d942895baf48442d8c9df54306887aa0)](https://www.codacy.com/manual/manilarome/the-glorious-startpage?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=manilarome/the-glorious-startpage&amp;utm_campaign=Badge_Grade)
 
-## 👇 Index
-- [👇 Index](#-index)
-- [✨ Features](#-features)
-- [🚀 Usage](#-usage)
-  - [🏡 As Home Page](#-as-home-page)
-  - [➕ As New Tab](#-as-new-tab)
-  - [🐳 In a Docker Container](#-in-a-docker-container)
-    - [Docker run](#docker-run)
-    - [docker-compose](#docker-compose)
-- [🎨 Customization](#-customization)
-  - [👋 General: Name, Image Background and Greetings](#-general-name-image-background-and-greetings)
-  - [📐 Layouts: Bento, Lists and Buttons.](#-layouts-bento-lists-and-buttons)
-  - [🏷️ Buttons \& Links](#️-buttons--links)
-  - [📑 Lists \& Links](#-lists--links)
-  - [⛈️ Weather: Api Key, Icons and Unit](#️-weather-api-key-icons-and-unit)
-  - [💛 Colors](#-colors)
-  - [🌑 Auto change theme](#-auto-change-theme)
+## [Live Preview](https://manilarome.github.io/the-glorious-startpage/)
 
-## ✨ Features
+## Gallery
 
-- **Easy configuration** file.
-- **Dark/Light** mode, you can toggle it and will be saved in local storage.
-- **Layouts!** to customize your experience following your workflow.
-- **Clock and Date** format can be set to 24 hour (default) or 12 hour.
-- **Greetings** are easy to modify.
-- **Variables** for custom colors and font sizes in the `app.css` code.
-- All **icons** are from [Lucide icons](https://lucide.dev).
-- **Modular** javascript files for an easy read.
+<div align='center'>
+	<h3>
+		<img src='/scrots/idle.png' align='center'>
+	</h3>
+</div>
 
-## 🚀 Usage
 
-### 🏡 As Home Page
+| Search Autosuggestion | Settings |
+| --- | --- |
+| ![screenshot](/scrots/autosuggestion.png) | ![screenshot](/scrots/settings.png) |
 
-1. Fork this repo
-2. Enable the Github Pages service `Settings → GitHub Pages → Source [master branch] → Save`
-3. Set it as Home Page:
-   - Click the menu button. and select Options. Preferences.
-   - Click the Home panel.
-   - Click the menu next to Homepage and new windows and choose to show custom URLs and add your `Github Pages link`
+| Web Menu | Weather Forecast |
+| --- | --- |
+| ![screenshot](/scrots/webmenu.png) | ![screenshot](/scrots/weather.png) |
 
-### ➕ As New Tab
 
-You can use different Add-ons/Extensions for it
+## Features
 
-- If you use Firefox: [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/?src=search) and make sure you enable "Force links to open in the top frame (experimental)" in the extension's preferences page.
-- If you use Chromium (Brave, Vivaldi, Chrome): [Custom New Tab URL](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia)
++ Responsive UI
++ Web Search Suggestions
++ Mobile Support with Swipe Gestures
++ Theme Settings - Change colors on-the-fly
++ Weather Forecast - OpenWeatherMap and Geolocation Integration
++ Search Engine Selection
++ Dynamic Background
++ Web Menu with Fuzzy Search
++ Keyboard Navigation
++ Vanilla Javascript!
++ And many bugs!
 
-### 🐳 In a Docker Container
+## Keybindings
 
-You can run Bento in a Docker Container, either with `docker run`, or with the included `docker-compose` file.
++ <kbd>alt + S</kbd> - toggles dashboard
++ <kbd>alt + E</kbd> - toggles web menu
++ <kbd>alt + X</kbd> - toggles weather screen
++ <kbd>Escape</kbd> - close panels/toggles web menu
++ <kbd>Backspace</kbd> - toggles search box
 
-#### Docker run
- 1. Clone this repo to pull the `config.js` file: `git clone https://github.com/migueravila/Bento/`
- 2. Run the following `docker` command, providing the path to the `config.js` file, changing port mappings if needed.
- 3. `# docker run -it -d -p 80:80 -v <config.js location>:/usr/share/nginx/html/config.js lewisdoesstuff/bento`
+## Swipe gestures
 
-#### docker-compose
-  1. Clone this repo with `git clone https://github.com/migueravila/Bento/`
-  2. Edit port mappings, and provide a path to the `config.js` file in `docker-compose.yml`
-  3. `cd` into the cloned repo, then run `# docker-compose -d up` to start. 
++ <kbd>swipe right</kbd> - opens web menu
++ <kbd>swipe left</kbd> - opens dashboard
++ <kbd>swipe up</kbd> - opens weather screen
++ <kbd>swipe down</kbd> - opens search box
 
-## 🎨 Customization
+## Quick search
 
-All customization can be managed in the `config.js` file:
++ `r/` + `subreddit name` will open the subreddit.
++ `w/` + `search query` to search in wikipedia.
++ `u/` + `search query` to search for an image/photo in unsplash.
++ `a/` + `search query` to search a product in amazon.
++ `e/` + `search query` to search a product in ebay.
++ `y/` + `search query` to search a video in youtube.
++ `n/` + `comic id` to search a "comic" in a certain "comic" website.
 
-### 👋 General: Name, Image Background and Greetings
+## Customization and Settings
 
-To change the default name, the greetings and if you want to have an image background or open your links in new tabs, edit the first configs in the `config.js`.
+#### Changing the colors, blur strength, and animation speed on-the-fly
 
-```js
- // General
-  name: 'John',
-  imageBackground: false,
-  openInNewTab: true,
++ Open the dashboard by clicking the settings button on the dock.
++ Change the color and blur strength by setting it on the `Theme Engine` section.
++ Color settings supports `#RGB`, `#RRGGBB`, and `#RRGGBBAA`.
++ Blur strength settings only allows integer with `px` suffix.
++ Animation speed supports `s` and `ms`. 
 
-  // Greetings
-  greetingMorning: 'Good morning!',
-  greetingAfternoon: 'Good afternoon,',
-  greetingEvening: 'Good evening,',
-  greetingNight: 'Go to Sleep!',
+#### Adding more buttons on the web menu
 
-```
-
-> You can change the background by substituting the `background.jpg` file in `assets` folder.
-
-![](assets/img/backgroundImage.png)
-
-### 📐 Layouts: Bento, Lists and Buttons.
-
-Bento has three different layouts `bento`, `lists` & `buttons`. It allows you to customise your experience giving you more buttons or lists depending on how are you more comfortable. To modify the laout you need to change the following line in the `config.js` file:
+Add more buttons or web shortcuts in web menu by editing the `webSites` array in `js/config.js`. Make sure to put an icon with `svg` format for the shortcut in `assets/webcons/` folder. 
 
 ```js
-  // Layout
-  bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
-
+const webSites = [
+	{
+		site: 'Reddit',
+		icon: 'reddit',
+		url: 'https://reddit.com/',
+		category: 'social'
+	},
+	...
+]
 ```
 
-If you want to customize all your extra buttons and lists go to [🏷️ Buttons & Links](#️-buttons--links) & [📑 Lists & Links](#-lists--links) sections.
+#### Adding more buttons on the dock
 
-![](assets/img/bentoLayouts.png)
-
-### 🏷️ Buttons & Links
-
-To edit the buttons you just need to change the follow list in the `config.js` file by choosing a link, an icon from [Lucide icons](https://lucide.dev) and a name. If you're using the `buttons` [layout](#-layouts-bento-lists-and-buttons) you can customize `secondButtonsContainer`
+To add more web shortcuts/buttons in the dock, you have to edit the `dockSites` array in `js/config.js`. Make sure to put an icon with `svg` format for the shortcut in `assets/webcons/` folder.
 
 ```js
-  firstButtonsContainer: [
-    {
-      id: '1',
-      name: 'Github',
-      icon: 'github',
-      link: 'https://github.com/',
-    },
-    {
-      id: '2',
-      name: 'Mail',
-      icon: 'mail',
-      link: 'https://mail.protonmail.com/',
-    },
-    {
-      id: '3',
-      name: 'Todoist',
-      icon: 'trello',
-      link: 'https://todoist.com',
-    },
-    {
-      id: '4',
-      name: 'Calendar',
-      icon: 'calendar',
-      link: 'https://calendar.google.com/calendar/r',
-    },
-    {
-      id: '5',
-      name: 'Reddit',
-      icon: 'glasses',
-      link: 'https://reddit.com',
-    },
-    {
-      id: '6',
-      name: 'Odysee',
-      icon: 'youtube',
-      link: 'https://odysee.com/',
-    },
-  ],
+const dockSites = [
+	{
+		site: 'Reddit',
+		icon: 'reddit',
+		url: 'https://reddit.com/'
+	},
+	...
+]
 ```
 
-### 📑 Lists & Links
+#### Adding more search engine in selection
 
-The same happens with the list links, you can change the list icon (also using Lucide icons) and the links. If you're using the `lists` [layout](#-layouts-bento-lists-and-buttons) you can customize `secondListsContainer`, you can find it bellow `firstListsContainer`.
+Add more search engine in selection by editing the `searchEngines` object in `js/config.js`. Make sure to follow the format below:
 
 ```js
-   firstlistsContainer: [
-    {
-      icon: 'music',
-      id: '1',
-      links: [
-        {
-          name: 'Inspirational',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-        },
-        {
-          name: 'Classic',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-        },
-        {
-          name: 'Oldies',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-        },
-        {
-          name: 'Rock',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-        },
-      ],
-    },
-    {
-      icon: 'coffee',
-      id: '2',
-      links: [
-        {
-          name: 'Linkedin',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-        },
-        {
-          name: 'Dribbble',
-          link: 'https://www.linkedin.com',
-        },
-        {
-          name: 'Trello',
-          link: 'https://www.trello.com',
-        },
-        {
-          name: 'Slack',
-          link: 'https://www.slack.com',
-        },
-      ],
-    },
-  ],
-```
-
-### ⛈️ Weather: Api Key, Icons and Unit
-
-For setting up the Weather widget you'll need an API Key from: `https://openweathermap.org/`. Once you have your Key you'll need to set your latitude and longitude, you can use: `https://www.latlong.net/` to get them. 
-
-Finally, choose an Icon set:
-
-![](assets/img/icons.png)
-
-- **Nord** Using the Nord Color Scheme and easy-to-eyes colors
-- **OneDark** (_Default one_) Using the One Dark Pro color scheme
-- **Dark** For White theme only users that want a minimalist look
-- **White** For Dark theme only users that want a minimalist look
-
-Finally just add them to the `config.js` file.
-
-```js
-  // Weather
-  weatherKey: 'InsertYourAPIKeyHere123456',
-  weatherIcons: 'OneDark',
-  weatherUnit: 'C',
-  weatherLatitude: '37.774929',
-  weatherLongitude: '-122.419418',
-```
-
-### 💛 Colors
-
-In the `app.css` file you can change the variables for both themes (Dark and Light):
-
-```css
-/* Light theme  */
-
-:root {
-  --accent: #61b0f1; /* Hover color */
-  --bg: #f5f5f5; /* Background color */
-  --sbg: #e4e6e6; /* Cards color */
-  --fg: #3a3a3a; /* Foreground color */
-  --sfg: #3a3a3a; /* Sceondary Foreground color */
-}
-
-/* Dark theme  */
-
-.darktheme {
-  --accent: #61b0f1; /* Hover color */
-  --bg: #19171a; /* Background color */
-  --sbg: #201e21; /* Cards color */
-  --fg: #d8dee9; /* Foreground color */
-  --sfg: #3a3a3a; /* Secondary Foreground color */
+const searchEngines = {
+	'duckduckgo': {
+		name: 'Duckduckgo',
+		prefix: 'https://duckduckgo.com/?q='
+	},
+	...
 }
 ```
 
-### 🌑 Auto change theme
+#### Adding more quick search urls
 
-The theme can be automatically changed by the OS' current theme or personalized hours
-that you can change in the `config.js` file:
+Add more quick search shortcuts by editing the `quickSearchData` object in `js/config.js`. Make sure to follow the format below:
 
 ```js
-  // Autochange
-  autoChangeTheme: true,
-
-  // Autochange by OS
-  changeThemeByOS: false, 
-
-  // Autochange by hour options (24hrs format, string must be in: hh:mm)
-  changeThemeByHour: true, // If it's true, it will use the values below:
-  hourDarkThemeActive: '18:30', // Turn on the dark theme after this hour
-  hourDarkThemeInactive: '07:00', // Turn off the dark theme after this hour and before the above hour
+const quickSearchData = {
+	'r/': {
+		urlPrefix: 'https://reddit.com/r/'
+	},
+	...
 ```
 
-![](assets/img/darkMode.png)
+#### Set your OpenWeatherMap API key
+
+Setting up your OpenWeatherMap credential is a breeze. 
+
++ If you don't have an API key, follow this guide:
+
+	How to get a credentials for the weather forecast?
+
+	- OpenWeatherMap is the weather provider, so go to OpenWeatherMap's [website](https://home.openweathermap.org/).
+	- Register, log-in, and then go [here](https://home.openweathermap.org/api_keys) to generate your very own API keys.
+
++ After this you can choose two locator modes - `Geolocation` and `City`.
++ In City Mode, you have to get your City ID in OpenWeatherMap website.
++ While `Geolocation` mode offers GPS tracking. You don't need to get an ID. Note that you must allow the location permission request.
++ Put your API key in the `Weather Settings`.
++ It's recommended to still put your City ID if you plan to use the `geolocation` mode.
++ Apply.
+
+**Note:**
+
++ If you're using firefox and you're planning to use the `geolocation`, make sure to set the value of `geo.provider.network.url` to `https://location.services.mozilla.com/v1/geolocate?key=test` in `about:config`. *Google changed its policies, so now it requires a valid API key when accessing their geolocation service. This tells us that you need a valid API key in place of* `%GOOGLE_LOCATION_SERVICE_API_KEY%`. <sup>[Citation](https://stackoverflow.com/questions/61032115/unknown-error-acquiring-position-geolocationpositionerror-code-2-firefox-linux).</sup>
+
++ If you're on mobile, make sure to enable your GPS and allow the location permission if you want to use `geolocation`.
+
++ If you just set the startpage locally, the location permission will always pop-up even if you already accept/denied it. It's better to run it on a web server.
+
+
+#### Changing the default search engine
+
+Google is the default search engine of the search bar, if you want to change it to DuckDuckGo or something:
+
++ Open the dashboard by clicking the settings button on the dock.
++ Find the `Search Engine` section and select your preferred search engine.
++ Set it as default.
+
+#### Changing the profile picture
+
++ Replace the `user.png` image file in `assets/`.
+
+#### Changing the background image
+
+The background image changes based on time.
+
++ Change the background images in `assets/backgrounds/`.
++ Make sure that it is in a `webp` format. 
++ A lower resolution of each images are also required.
+
+#### Keybindings
+
++ You can add, replace, or remove a keybinding by editing `js/keybindings.js`.
+
+### Important Note
+
++ Make sure that javascript is enabled!
+
++ If you're using `NoScript` and `Dark Mode Reader` extensions make sure to disable them on the starpage! NoScript will disable javascript making this startpage useless. While, Dark Mode Reader will change the ligher CSS colors to dark, ruining the design.
+
++ If you're using firefox and blur effect is not enabled, open `about:config`, accept the risks, find `layout.css.backdrop-filter.enabled`, and set it to true to enable it. Refresh the startpage.
+
++ If you're using firefox and planning to use the geolocation, set the value of `geo.provider.network.url` to `https://location.services.mozilla.com/v1/geolocate?key=test` in `about:config`.
+
++ The code could be better, this is my first time writing a startpage from the ground up. I will improve this from time to time.
+
++ Found a bug, error or do you have a suggestion? Feel free to open an issue or pull request.
+
++ Tested only on Firefox and Google Chrome.
+
+### TODO
+
+- [x] GUI Settings  
+- [x] Weather Forecast  
+- [x] Dynamic Background   
+- [x] Cleaner code<sup>WIP</sup>  
+- [x] Keyboard navigation  
+- [x] Swipe gestures for mobile  
