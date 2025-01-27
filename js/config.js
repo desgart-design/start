@@ -212,9 +212,9 @@ class Config {
 				url: 'https://youtube.com/'
 			},
 			{
-				site: 'GDrive',
-				icon: 'gdrive',
-				url: 'https://drive.google.com/'
+				site: 'desgart.design',
+				icon: 'desgart',
+				url: 'https://desgart-design.github.io/'
 			},
 			{
 				site: 'TdFm',
