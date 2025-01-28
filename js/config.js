@@ -202,24 +202,24 @@ class Config {
 				url: 'https://github.com/'
 			},
 			{
-				site: 'Facebook',
-				icon: 'facebook',
-				url: 'https://facebook.com/'
+				site: 'Bio',
+				icon: 'gitton',
+				url: 'https://linkr.bio/tdfm/'
 			},
 			{
-				site: 'Youtube',
-				icon: 'youtube',
-				url: 'https://youtube.com/'
+				site: 'Fritzbox',
+				icon: 'fritz',
+				url: 'http://192.168.2.197/'
 			},
 			{
 				site: 'desgart.design',
 				icon: 'desgart',
-				url: 'https://desgart-design.github.io/'
+				url: 'https://desgart-design.github.io/pics'
 			},
 			{
 				site: 'TdFm',
 				icon: 'ton',
-				url: 'https://linkr.bio/tdfm'
+				url: 'https://desgart-design.github.io'
 			}
 
 		];
