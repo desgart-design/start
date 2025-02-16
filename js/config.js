@@ -192,9 +192,9 @@ class Config {
 		// A list of websites that will be generated and put on the dock
 		const dockSites = [
 			{
-				site: 'Reddit',
-				icon: 'reddit',
-				url: 'https://reddit.com/'
+				site: 'Home Assitant',
+				icon: 'ha',
+				url: 'http://192.168.2.247:8123/'
 			},
 			{
 				site: 'Github',
