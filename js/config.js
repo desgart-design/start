@@ -219,7 +219,7 @@ class Config {
 			{
 				site: 'TdFm',
 				icon: 'ton',
-				url: 'https://desgart-design.github.io'
+				url: 'https://desgart-design.github.io/desgart/'
 			}
 
 		];
