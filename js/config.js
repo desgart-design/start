@@ -212,9 +212,9 @@ class Config {
 				url: 'http://192.168.2.197/'
 			},
 			{
-				site: 'desgart.design',
-				icon: 'desgart',
-				url: 'https://desgart-design.github.io/pics'
+				site: 'Server',
+				icon: 'cloud',
+				url: 'https://192.168.2.189:10000/'
 			},
 			{
 				site: 'TdFm',
