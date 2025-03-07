@@ -197,14 +197,9 @@ class Config {
 				url: 'http://192.168.2.247:8123/'
 			},
 			{
-				site: 'Github',
-				icon: 'github',
-				url: 'https://github.com/'
-			},
-			{
-				site: 'Bio',
-				icon: 'gitton',
-				url: 'https://linkr.bio/tdfm/'
+				site: 'MuckeEisen',
+				icon: 'ton',
+				url: 'http://192.168.2.189:3689'
 			},
 			{
 				site: 'Fritzbox',
@@ -212,16 +207,20 @@ class Config {
 				url: 'http://192.168.2.197/'
 			},
 			{
-				site: 'Server',
-				icon: 'cloud',
+				site: 'Webmin',
+				icon: 'webmin',
 				url: 'https://192.168.2.189:10000/'
 			},
 			{
-				site: 'TdFm',
-				icon: 'ton',
+				site: 'Cockpit',
+				icon: 'cockpit',
+				url: 'https://192.168.2.189:9090'
+			},
+			{
+				site: 'desgart',
+				icon: 'desgart',
 				url: 'https://desgart-design.github.io/desgart/'
 			}
-
 		];
 
 		return dockSites;
