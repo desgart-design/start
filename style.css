@@ -70,6 +70,12 @@ body {
 	transition: transform 400ms ease-out;
 }
 
+.banner {
+  display: grid;
+  place-items: center; /* Zentriert horizontal UND vertikal gleichzeitig */
+  height: 80px;
+}
+
 .gallery-image:hover {
 	transform: scale(1.15);
 }
